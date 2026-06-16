@@ -1,6 +1,8 @@
 scriptName ccBGSSSE034_WildHorsesQuestScript extends Quest
 {Main script that handles quest, tutorial, horse renaming}
 
+import PO3_SKSEFunctions
+
 globalvariable property TamedHorseCounter auto
 referencealias[] property ArrayHorseNames auto
 keyword property SpecialHorseKeyword auto
@@ -36,8 +38,6 @@ ccbgssse034_wildhorserefaliasscript function GetHorseRefAlias(actor HorseActorRe
 	endWhile
 	return thisHorseAlias
 endFunction
-
-import PO3_SKSEFunctions
 
 function ShowTutorial()
 	if !HasTutorialDisplayed

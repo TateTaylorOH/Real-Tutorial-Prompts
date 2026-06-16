@@ -2,6 +2,8 @@ scriptName ccBGSSSE001_FishingSystemScript extends Quest
 {The system that handles all fishing gameplay mechanics.
   Interacts with Fishing Supplies (ccBGSSSE001_FishingActScript), which maintain some local state.}
 
+import PO3_SKSEFunctions
+
 Int property UPDATETYPE_CATCHTIMEOUT
 	Int function get()
 		return 3
@@ -1484,8 +1486,6 @@ function ResetSystem()
 	ClearFishingSessionVariables()
 	ClearFishingAttemptVariables()
 endFunction
-
-import PO3_SKSEFunctions
 
 function ShowFishingTutorial()
 	if ccBGSSSE001_FishingTutorialDisplayed.GetValueInt() == 0
