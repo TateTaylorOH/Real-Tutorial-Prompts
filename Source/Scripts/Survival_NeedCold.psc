@@ -1,5 +1,7 @@
 scriptName Survival_NeedCold extends Survival_NeedBase
 
+import PO3_SKSEFunctions
+
 message property Survival_ColdWarmingUpMessage auto
 message property Survival_ColdConditionStage1 auto
 Int property coldLevelBlizzardMod = 10 auto hidden

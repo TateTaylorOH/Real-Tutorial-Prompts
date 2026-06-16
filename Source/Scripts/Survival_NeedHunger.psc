@@ -1,5 +1,7 @@
 scriptName Survival_NeedHunger extends Survival_NeedBase
 
+import PO3_SKSEFunctions
+
 globalvariable property Survival_HelpShown_Hunger auto
 spell property Survival_AfflictionWeakened auto
 spell property Survival_DiseaseGutworm auto

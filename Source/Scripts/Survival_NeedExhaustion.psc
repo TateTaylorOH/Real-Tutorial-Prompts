@@ -1,5 +1,7 @@
 scriptName Survival_NeedExhaustion extends Survival_NeedBase
 
+import PO3_SKSEFunctions
+
 globalvariable property Survival_AfflictionExhaustionChance auto
 keyword property LocTypeInn auto
 spell property VampireVampirism auto
