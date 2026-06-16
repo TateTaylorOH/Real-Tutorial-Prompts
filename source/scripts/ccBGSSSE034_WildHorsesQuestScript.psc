@@ -37,10 +37,12 @@ ccbgssse034_wildhorserefaliasscript function GetHorseRefAlias(actor HorseActorRe
 	return thisHorseAlias
 endFunction
 
+import PO3_SKSEFunctions
+
 function ShowTutorial()
 	if !HasTutorialDisplayed
 		HasTutorialDisplayed = true
-		HelpWildHorseTutorial.Show()
+		ShowTutorialMessage(HelpWildHorseTutorial)
 	endIf
 endFunction
 
