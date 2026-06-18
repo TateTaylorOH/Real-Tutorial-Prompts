@@ -978,7 +978,7 @@ function SetupCameraAndPosition(bool abContinueFishing = false)
 	Wait(DURATION_RODLOADTIME)
 	fishingRodActivator.TranslateToRef(currentFishingSupplies.GetFishingMarker(), 2000.0, 2000.0)
 	
-	MoveDetectRef.IgnoreTriggerEvents(true)
+	MoveDetectRef.IgnoreTriggerEvents()
 	ObjectReference fishingMarker = currentFishingSupplies.GetFishingMarker()
 
 	; Move the "Reel Line" activator, navigation blocker, and the movement detector around the player.
